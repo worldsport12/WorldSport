@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.icon{
+    background-size: 40px;
+    width: 410px
+    height: 30px;
+}
+body{
+    background-color: black;
+}
+
+.nintendo{
+    width: 80%;
+}
+
+.header-padre{
+    width: 80%;
+    box-sizing: content-box;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin: 0 auto;
+}
+
+.fucsia{
+    width: 200px;
+    min-width: 30%;
+    height: 100px;
+    
+
+    border-radius: 20px;
+}
+
+.amarillo{
+    width: 500px;
+    min-width: 50%;
+    height: 100px;
+ 
+margin-top: 20px;
+    border-radius: 20px;
+}
+
+.contenedor-padre{
+    width: 100%;
+    height: 500px;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.caja1{
+    width:1000px;
+    height: 600px;
+    flex-grow: 1;
+   background-color: rgb(0, 0, 0);
+   color: #fdfdfd;
+    border-radius: 20px;
+    text-align: center;
+}
+.mario{
+    width: 80%;
+}
+.caja2{
+    width:1000px;
+    height: 500px;
+    background: rgb(255, 255, 255);
+    flex-grow: 1;
+    border-radius: 20px;
+}
+.caja3{
+    width:1000px;
+    height: 500px;
+    background: rgb(1, 250, 1);
+    flex-grow: 1;
+    border-radius: 20px;
+}
+
+.cuadro{
+    width: 100%;
+    height: 300px;
+    margin-top: 600px;
+    background: #494a4d;
+    align-items: end;
+    border-radius:20px;
+    margin: 77 auto;
+    display: flex;
+}
+.contenedor-abuelo{
+    width: 80%;
+    box-sizing: content-box;
+    margin: 0 auto;
+    gap: 10px;
+    
+    margin-top: 20px;
+
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.contendor1{
+    min-width: 80%;
+   
+}
+.contendor2{
+    flex-grow: 1;
+   
+}
+.lateral{
+    flex-grow: 1;
+    min-height: 100px;
+    height: 100%;
+  
+    
+}
+p{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: justify;
+    margin: 20px;
+    color: #ffffff;
+}
+
+.ody{
+    margin: 20px;
+    border-radius: 15px;
+}
+h2{
+    color: #ffffff;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-left: 20px;
+    margin-top: 2px;
+    background-color: #494a4d;
+}
+.alls{
+    margin: 20px;
+    border-radius: 15px;
+    width: 80%;
+}
+.alls:hover{
+    opacity: 0.5;
+}
+.ody:hover{
+    opacity: 0.5;
+}
+.menuu{
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    display: block;
+    margin: 10px;
+    border: #ffffff solid 2px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 15px;
+    padding-bottom: 0%;
+
+}
+
+
+ul{
+    display: flex;
+}
+.menuu:hover{
+    background: #12515c;
+}
+h3{
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    color: #ffffff;
+    text-align: center;
+    padding: 40px;
+    margin: 3 auto;
+    background: #000000;
+    border-radius: 2px;
+}
+.us{
+    width: 30px;
+    
+}
+
+h3:hover{
+    background: #000000;
+}
+
+
+.bow{
+    margin-right: 10px;
+    width: 300px;
+    height: auto;
+    position: relative;
+    top: 10px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.cubo{
+    width: 500px;
+    height: 70px;
+ margin-left: 20%;
+  
+}
+
+
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
+
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+    margin-left: -5%;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+}
+
+
+
+.contac{
+    margin-bottom: 190%;
+    color: #ffffff;
+    
+    margin-left: 440%;
+}
+.redes:hover{
+    background-color: #001aff;
+    border-radius: 100%;
+    
+}
+.redes{
+    width: 9%;
+    margin: 0%;
+    padding: 1px;
+    background-color: #494a4d;
+    float: left;
+    margin-right: 1px;
+}
+.rede:hover{
+    background-color: #0fccee;
+    border-radius: 100%;
+}
+.rede{
+    width: 9%;
+    margin: 0%;
+    padding: 1px;
+    background-color: #494a4d;
+    float: left;
+    margin-right: 1px;
+}
+.red:hover{
+    background-color: #dc11ee;
+    border-radius: 100%;
+}
+.red{
+    width: 9%;
+    margin: 0%;
+    padding: 1px;
+    background-color: #494a4d;
+    float: left;
+    margin-right: 1px;
+}
+.redess:hover{
+    background-color: #ff0909;
+    border-radius: 100%;
+    
+}
+.redess{
+    width: 9%;
+    margin: 0%;
+    padding: 1px;
+    background-color: #494a4d;
+    float: left;
+    margin-right: 1px;
+}
+
+.redc{
+    align-items: center;
+}
+.obj{
+    width: 100,5%;
+    margin: 0%;
+    margin-right: 1px;
+    background-color: #494a4d;
+    
+}
